@@ -5,7 +5,6 @@ while ismetles == "y":
     maxrand = int(input("Válazd ki a maximum számot: "))
     szam = random.randint(0, maxrand)
     print("Találd ki a titkos számot!")
-    print(szam)
     kitalalva = 0
     while kitalalva == 0:
         sejtes = int(input("Mit sejtesz, mi a szám? "))
@@ -13,9 +12,9 @@ while ismetles == "y":
             print("gratulálok! Kitaláltad a számot! ")
             kitalalva += 1
         elif sejtes < szam:
-            print("A titkos szám nagyobb mint a sejtésed!")
+            print("A titkos szám NAGYOBB mint a sejtésed!")
         elif sejtes > szam:
-            print("A titkos szám kisebb mint a sejtésed!")
+            print("A titkos szám KISEBB mint a sejtésed!")
         else:
             print("Érvénytelen érték!")
     ismetles = input("Akarsz mégegyszer játszani? (y/n) ")
